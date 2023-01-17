@@ -1,0 +1,326 @@
+    /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+:root{
+--negro-1: #141414;
+--negro-2: #181818;
+--negro-3: #1E1E1E;
+--rojo-1: #FF4342;
+--rojo-2: #C31926;
+--blanco: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* border: solid greenyellow 1px;  */
+    /* BORDER */
+}
+button:hover{
+    position: relative;
+    top: -1px;
+    right: -1px;
+    box-shadow: -1px 1px 6px black;
+    
+}
+nav a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+nav a:hover{
+    color: var(--rojo-2);
+}
+
+body {
+    font-family: "Helvetica", "Arial", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Lucida Grande", "sans-serif";
+    font-weight: 300;
+    }
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+    /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+    /* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV */
+.navegacion{
+    background-color:var(--negro-1);
+    color: var(--blanco);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    z-index: 1;
+}
+nav{
+    height: 100%;
+}
+nav ul{
+    margin-left: 80%;
+    width: 20%;
+    height: 100%;
+    font-size:xx-small;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50vh;
+}
+    /* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV */
+    /* INICIO INICIO INICIO INICIO INICIO INIC */
+.inicio{
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: 
+        linear-gradient(to left bottom, var(--negro-3) 0%, var(--negro-1) 45%, var(--negro-1));
+}   
+h6{
+    color: var(--rojo-1);
+    font-size: smaller;
+    padding: 2% 0;
+}
+h4{
+    color: var(--blanco);
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+h3{
+    color: var(--blanco);
+    letter-spacing: 1px;
+}
+h1{
+    color: var(--blanco);
+    font-size: 3.5vh;
+    letter-spacing: 1px;   
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    color: var(--blanco);
+}
+.img{
+background-color: var(--negro-1);
+grid-column-start: 2;
+width: 50px;
+height: 50%;
+}
+.inicio-txt{
+    width: 100%;
+}
+button{
+    background: linear-gradient(to right top, var(--rojo-2), var(--rojo-1)100%, var(--rojo-2));
+    color: var(--blanco);
+    font-size: x-small;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 10vw;
+    height: 7vh;
+}
+    /* INICIO INICIO INICIO INICIO INICIO INIC */
+    /* PROYECTOS PROYECTOS PROYECTOS PROYECTO */
+
+.proy-bt{
+    margin-left: 65%;
+}
+.proy-bg{
+    position: absolute;
+    background-color: var(--negro-1);
+    height: 90vh;
+    width: 100%;
+    top: 50vh;
+    z-index: -1;
+    left: 0;
+}
+.proy-head{
+    margin: 0 20%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+}
+.gris{
+    background-color: var(--negro-2);
+    z-index: -2;
+    height: 86vh;
+    top: 110vh;
+  
+}
+
+.proyectos-img{
+    width: 60%;
+    height: 40rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#mas{
+    letter-spacing: 2px;
+}
+#mas:hover{
+    color: var(--blanco);
+}
+.fig-div{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.figure-class{
+    margin-top: 3.5%;
+    align-items: center;
+}
+.fig{
+    height: 90%;
+    width: 90%;
+    margin-top: 10%;
+    background: linear-gradient(to top right, var(--negro-2), var(--negro-3), var(--negro-2));
+    align-self: center;
+}
+.descripcion{
+    padding-top: 2%;
+    text-align: left;
+    margin-left: 5%;
+}
+.imagenes{
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 70%;
+    box-shadow: -1px 5px 15px black;
+}
+    /* PROYECTOS PROYECTOS PROYECTOS PROYECTO */
+    /* CONTACTO CONTACTO CONTACTO CONTACTO C */
+.bg2{
+    position: absolute;
+    background-color: var(--negro-1);
+    height: 70vh;
+    width: 100%;
+    top: 150vh;
+    z-index: -3;
+    left: 0;
+    }
+.contactos{
+    background: linear-gradient(to top right, var(--negro-2), var(--negro-3), var(--negro-2));
+    margin: auto;
+    margin-top: 5%;
+    width: 60vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+    /* CONTACTO CONTACTO CONTACTO CONTACTO C */
+    /*FOOTER FOOTER FOOTER FOOTER FOOTER FOO*/
+footer{
+    border-top: var(--negro-3) double;
+    background-color: var(--negro-2);
+    width: 100%;
+    height: 10vh;
+    margin-top: 5%;
+}
+.foo-imagenes{
+    border: solid green;
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    /* overflow: hidden; */
+}
+.foo-img{
+width: 33.33%;
+height: 100%;
+overflow: hidden;
+border: solid greenyellow;
+}
+
+
+
+#correo{
+    width: 150%;
+    position: relative;
+    top: -95px;
+    left: -100px;
+    clip-path: inset(50% 0% 25% 75%);
+}
+#git{
+    width: 150%;
+    position: relative;
+    top: -46px;
+    left: -100px;
+    clip-path: inset(25% 0% 50% 75%);
+}
+#linkedin{
+    width: 150%;
+    position: relative;
+    top: -46px;
+    top: -95%;
+    clip-path: inset(25% 50% 50% 25%);
+}
+    /*FOOTER FOOTER FOOTER FOOTER FOOTER FOO*/
+    /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA M*/
+    @media(max-width: 600px){
+        body{
+            margin-top: 8%;
+        }
+        .fig{
+            height: 20vh;
+        }
+        .fig-div{
+            width: 100%;
+            height: 30vh;
+        }
+        .proyectos-img{
+            height: 150vh;
+        }
+        .bg2{
+            height: 180vh;
+        }
+        #cnt{
+            width: 12vw;
+        }
+        nav ul{
+            width: 100%;
+            margin: auto;
+        }
+        button{
+            width: 100%;
+        }
+        .contactos{
+            height: 40vh;
+            width: 100%;
+        }
+        #cnt{
+            width: 20vw;
+        }
+        #cnt:hover{
+            left: -2px;
+        }
+        #correo{
+            width: 400%;
+            top: -50px;
+            left: -90px;
+        }
+        #git{
+            width: 400%;
+            top: -20px;
+            left: -90px;
+        }
+        #linkedin{
+            width: 400%;
+            top: -20px;
+            left: -30px;
+        }
+        footer{
+            margin-top: 0;
+        }
+    }
+    @media(max-width: 400px){
+        .bg2{
+            height: 115vh;
+        }
+    }
+    /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA M*/
+

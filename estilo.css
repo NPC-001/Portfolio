@@ -1,5 +1,4 @@
     /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
-    /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 :root{
 --negro-1: #141414;
 --negro-2: #181818;
@@ -116,6 +115,7 @@ button{
     letter-spacing: 1px;
     width: 10vw;
     height: 7vh;
+    border: none;
 }
     /* INICIO INICIO INICIO INICIO INICIO INIC */
     /* PROYECTOS PROYECTOS PROYECTOS PROYECTO */
@@ -126,7 +126,7 @@ button{
 .proy-bg{
     position: absolute;
     background-color: var(--negro-1);
-    height: 90vh;
+    height: 82vh;
     width: 100%;
     top: 50vh;
     z-index: -1;
@@ -144,7 +144,7 @@ button{
     background-color: var(--negro-2);
     z-index: -2;
     height: 86vh;
-    top: 110vh;
+    top: 105vh;
   
 }
 
@@ -271,7 +271,7 @@ pointer-events: none;
 
 #zamil{
     justify-self: right;
-    margin-left: 22%;
+    margin-left: 18%;
 }
 
     /*FOOTER FOOTER FOOTER FOOTER FOOTER FOO*/
@@ -288,7 +288,8 @@ pointer-events: none;
             height: 30vh;
         }
         .figure-class{
-            width: 70%;
+            padding-top: 5%;
+            width: 80%;
             margin: auto;
         }
         .proyectos-img{
@@ -347,5 +348,4 @@ pointer-events: none;
         }
     }
     /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA M*/
-
 

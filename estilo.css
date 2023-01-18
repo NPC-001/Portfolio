@@ -1,4 +1,5 @@
     /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+    /* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 :root{
 --negro-1: #141414;
 --negro-2: #181818;
@@ -18,15 +19,14 @@
 button:hover{
     position: relative;
     top: -1px;
-    right: -1px;
     box-shadow: -1px 1px 6px black;
     
 }
-nav a{
+nav a, footer a{
     text-decoration: none;
     color: var(--blanco);
 }
-nav a:hover{
+nav a:hover, footer a:hover{
     color: var(--rojo-2);
 }
 
@@ -220,45 +220,60 @@ footer{
     width: 100%;
     height: 10vh;
     margin-top: 5%;
+    display: flex;
+    align-items: center;
 }
 .foo-imagenes{
-    border: solid green;
     width: 30%;
     height: 100%;
-    margin: auto;
     display: flex;
-    /* overflow: hidden; */
+    justify-self: center;
+    overflow: hidden;
+
 }
 .foo-img{
 width: 33.33%;
 height: 100%;
 overflow: hidden;
-border: solid greenyellow;
+pointer-events: none;
+
 }
 
-
-
+#linkedin{
+    width: 32%;
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+    pointer-events: auto;
+  
+}
 #correo{
-    width: 150%;
-    position: relative;
-    top: -95px;
-    left: -100px;
-    clip-path: inset(50% 0% 25% 75%);
+    width: 32%;
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+    pointer-events: auto;
+    
 }
 #git{
-    width: 150%;
-    position: relative;
-    top: -46px;
-    left: -100px;
-    clip-path: inset(25% 0% 50% 75%);
+    width: 33%;
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+    pointer-events: auto;
+
 }
-#linkedin{
-    width: 150%;
+
+.cont:hover{
     position: relative;
-    top: -46px;
-    top: -95%;
-    clip-path: inset(25% 50% 50% 25%);
+    top:-2px;
 }
+
+#zamil{
+    justify-self: right;
+    margin-left: 22%;
+}
+
     /*FOOTER FOOTER FOOTER FOOTER FOOTER FOO*/
     /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA M*/
     @media(max-width: 600px){
@@ -271,6 +286,10 @@ border: solid greenyellow;
         .fig-div{
             width: 100%;
             height: 30vh;
+        }
+        .figure-class{
+            width: 70%;
+            margin: auto;
         }
         .proyectos-img{
             height: 150vh;
@@ -298,29 +317,35 @@ border: solid greenyellow;
         #cnt:hover{
             left: -2px;
         }
-        #correo{
-            width: 400%;
-            top: -50px;
-            left: -90px;
-        }
-        #git{
-            width: 400%;
-            top: -20px;
-            left: -90px;
-        }
-        #linkedin{
-            width: 400%;
-            top: -20px;
-            left: -30px;
-        }
         footer{
             margin-top: 0;
+        }
+        #correo{
+            width: 100%;
+        }
+        #git{
+            width: 100%;
+        }
+        #linkedin{
+            width: 100%;
+        }
+        .zam1{
+            width:1px;
+            height: 1px;
+            overflow: hidden;
         }
     }
     @media(max-width: 400px){
         .bg2{
             height: 115vh;
         }
+        .foo-imagenes{
+            width: 50%;
+        }
+        #zamil{
+            margin-left: 0;
+        }
     }
     /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA M*/
+
 

@@ -23,12 +23,11 @@
     </div>
     <section class="inicio grid" id="inicio">
         <div class="img">
-            
         </div>
         <div class="inicio-txt" >
             <h6>Hola soy Pedro</h6>
             <h1>ESTUDIANTE</h1>
-            <p>Espero que les guste mi portfolio!</p>
+            <p>Espero que les guste mi portfolio!<br>EL diseño se adapta a distintos tamaños de pantalla</p>
             <button class="ab" id="bdark">MODO CLARO</button>
         </div>
     </section>
@@ -38,7 +37,7 @@
         <div class="proy-head">
             <div class="proy-txt" >
                 <H1>PROYECTOS</H1>
-                <p>Acá voy a estar subiendo mis trabajos</p>
+                <p>Por ahora mis habilidades se limitan al HTML y CSS aunque conozco lo basico de JavaScript no tanto como para hacer un proyecto mas complejo</p>
             </div>
             <div>
                 <button class="proy-bt" id="bdark">VER TODDO</button>
@@ -46,10 +45,10 @@
         </div>
         <div class="proy-body">
             <div class="proyectos-img">
-                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h3>PROXIMAMENTE</h2><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
-                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h3>PROXIMAMENTE</h2><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
-                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h3>PROXIMAMENTE</h2><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
-                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h3>PROXIMAMENTE</h2><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
+                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h4>PROXIMAMENTE</h4><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
+                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h4>PROXIMAMENTE</h4><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
+                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h4>PROXIMAMENTE</h4><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
+                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h4>PROXIMAMENTE</h4><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
             </div>
         </div>
     </section>
@@ -78,29 +77,31 @@
 
         load();
 
-        bdark.addEventListener('click', e =>{
-            body.classList.toggle('darkmode');
-            store();
-            if(bdark.textContent == "MODO CLARO"){
-                bdark.textContent = "MODO OSCURO";
-            }else{
-                bdark.textContent = "MODO CLARO";
-            }
-        })
+bdark.addEventListener('click', e =>{
+    const currentDarkMode = body.classList.toggle('darkmode');
+    store(currentDarkMode);
+    if(bdark.textContent == "MODO CLARO"){
+        bdark.textContent = "MODO OSCURO";
+    }else{
+        bdark.textContent = "MODO CLARO";
+    }
+})
 
-        function load(){
-            const darkmode = localStorage.getItem('darkmode');
+function load(){
+    const darkmode = localStorage.getItem('darkmode');
 
-            if(!darkmode){
-                store('false');
-            }
-            else if(darkmode == 'true'){
-                body.classList.add('darkmode')
-            }
-        }
-        function store(value){
-            localStorage.setItem('darkmode', value)
-        }
+    if(!darkmode){
+        store(false);
+    }
+    else if(darkmode === 'true'){
+        body.classList.add('darkmode')
+    }
+}
+
+function store(value){
+    localStorage.setItem('darkmode', value.toString())
+}
+
     </script>
 </body>
 </html>

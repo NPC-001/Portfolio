@@ -58,12 +58,13 @@ nav{
     height: 100%;
 }
 nav ul{
-    margin-left: 80%;
-    width: 20%;
+    margin-left: 70%;
+    width: 30%;
     height: 100%;
     font-size:xx-small;
     list-style-type: none;
     justify-content: space-evenly;
+    
 }
 .grid{
     display: grid;
@@ -86,11 +87,8 @@ h6{
 h4{
     color: var(--blanco);
     letter-spacing: 1px;
-    font-weight: 300;
-}
-h3{
-    color: var(--blanco);
-    letter-spacing: 1px;
+    font-weight: 800;
+    font-family: "Arial";
 }
 h1{
     color: var(--blanco);
@@ -102,11 +100,10 @@ p{
     font-weight: 100;
     color: var(--blanco);
 }
+
 .img{
 background-color: var(--negro-1);
 grid-column-start: 2;
-width: 50px;
-height: 50%;
 }
 .inicio-txt{
     width: 100%;
@@ -195,7 +192,7 @@ button{
 .imagenes{
     display: block;
     position: relative;
-    margin: auto;
+    margin:0 15%;
     width: 70%;
     box-shadow: -1px 5px 15px black;
 }
@@ -204,7 +201,7 @@ button{
 .bg2{
     position: absolute;
     background-color: var(--negro-1);
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     top: 150vh;
     z-index: -3;
@@ -302,13 +299,16 @@ pointer-events: none;
         .fig{
             height: 20vh;
         }
+        .imagenes{
+            margin: 0 9%;
+        }
         .fig-div{
             width: 100%;
             height: 30vh;
         }
         .figure-class{
-            width: 80%;
-            margin: auto;
+            width: 90%;
+            margin: 0 9%;
         }
         .proyectos-img{
             height: 150vh;
@@ -358,12 +358,17 @@ pointer-events: none;
         .bg2{
             height: 115vh;
         }
+        .imagenes{
+            margin: 0 7%;
+        }
         .foo-imagenes{
             width: 30%;
             padding-top: 4%;
         }
         .figure-class{
-            padding-top: 10%;
+            width: 90%;
+            margin: 0 11%;
+            padding-top: 15%;
         }
         #zamil{
             margin-left: 5%;
@@ -387,6 +392,66 @@ pointer-events: none;
         #zamil{
             margin-left: 0;
         }
+    }
+    @media(max-height: 500px){
+        .navegacion{
+            height: 15%;
+        }
+        body{
+            margin-top: 10%
+        }
+        .grid{
+            display: block;
+            height: 50vh;
+        }
+        .proy-body{
+            height: 250vh;
+        }
+        .proyectos-img{
+            height: 200vh;
+        }
+        .fig-div{
+            height: 30%;
+        }
+        .fig{
+            height: 300%;
+            margin:0;
+        }
+        .figure-class{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+    
+        }
+        .imagenes{
+            margin: auto;
+            margin-top: 10%
+        }
+        .gris{
+            background-color: var(--negro-1);
+        }
+        .bg2{
+            height: 260vh;
+        }
+        footer{
+            position:relative;
+            height: 15%;
+        }
+        /* .zam1{
+            width:1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        .foo-imagenes{
+            width: 30%;
+        }
+        #zamil{
+            margin-left: 50%;
+        }
+       .fig{
+        height: 200%;
+       } */
+       
     }
     /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA M*/
     /* MODO CLARO MODO CLARO MODO CLARO M */

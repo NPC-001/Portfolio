@@ -74,11 +74,15 @@ nav ul{
     /* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV */
     /* INICIO INICIO INICIO INICIO INICIO INIC */
 .inicio{
+    display: flex;
+    justify-content: center;
     align-items: center;
     justify-content: space-evenly;
     background-image: 
         linear-gradient(to left bottom, var(--negro-3) 0%, var(--negro-1) 45%, var(--negro-1));
-}   
+    height: 50vh;
+}  
+
 h6{
     color: var(--rojo-1);
     font-size: smaller;
@@ -106,7 +110,7 @@ background-color: var(--negro-1);
 grid-column-start: 2;
 }
 .inicio-txt{
-    width: 100%;
+    width: 35%;
 }
 button{
     background: linear-gradient(to right top, var(--rojo-2), var(--rojo-1)100%, var(--rojo-2));
@@ -393,28 +397,28 @@ pointer-events: none;
             margin-left: 0;
         }
     }
-    @media(max-height: 500px){
+    /* @media(max-height: 600px){
         .navegacion{
             height: 15%;
         }
         body{
-            margin-top: 10%
+            margin-top: 8%
         }
         .grid{
             display: block;
             height: 50vh;
         }
         .proy-body{
-            height: 250vh;
+            height: 100vh;
         }
         .proyectos-img{
-            height: 200vh;
+            height: 100vh;
         }
         .fig-div{
-            height: 30%;
+            height: 45%;
         }
         .fig{
-            height: 300%;
+            height: 40vh;
             margin:0;
         }
         .figure-class{
@@ -423,6 +427,10 @@ pointer-events: none;
             width: 100%;
     
         }
+        .descripcion{
+            font-size: 3vh;
+        }
+        
         .imagenes{
             margin: auto;
             margin-top: 10%
@@ -431,28 +439,33 @@ pointer-events: none;
             background-color: var(--negro-1);
         }
         .bg2{
-            height: 260vh;
+            height: 110vh;
         }
         footer{
             position:relative;
             height: 15%;
         }
-        /* .zam1{
-            width:1px;
-            height: 1px;
-            overflow: hidden;
-        }
-        .foo-imagenes{
-            width: 30%;
-        }
-        #zamil{
-            margin-left: 50%;
-        }
-       .fig{
-        height: 200%;
-       } */
-       
+    } */
+/* @media (max-height: 300px){
+    body{
+        margin-top: 3%;
     }
+    button{
+        height: 10vh;
+    }
+    h1{
+        font-size: 6vh;
+    }
+    .proyectos-img{
+        height: 130vh;
+    }
+    .proy-body{
+        height: 130vh;
+    }
+    .bg2{
+        height: 160vh;
+    } */
+/* } */
     /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA M*/
     /* MODO CLARO MODO CLARO MODO CLARO M */
  .darkmode, .darkmode .proy-bg, .darkmode .bg2{

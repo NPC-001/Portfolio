@@ -74,11 +74,15 @@ nav ul{
     /* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV */
     /* INICIO INICIO INICIO INICIO INICIO INIC */
 .inicio{
+    display: flex;
+    justify-content: center;
     align-items: center;
     justify-content: space-evenly;
     background-image: 
         linear-gradient(to left bottom, var(--negro-3) 0%, var(--negro-1) 45%, var(--negro-1));
-}   
+    height: 50vh;
+}  
+
 h6{
     color: var(--rojo-1);
     font-size: smaller;
@@ -106,7 +110,7 @@ background-color: var(--negro-1);
 grid-column-start: 2;
 }
 .inicio-txt{
-    width: 100%;
+    width: 35%;
 }
 button{
     background: linear-gradient(to right top, var(--rojo-2), var(--rojo-1)100%, var(--rojo-2));

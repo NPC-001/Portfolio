@@ -10,13 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <title>Portafolio</title>
 </head>
-<body>
+<body class="claro">
     <div class="navegacion">
         <nav>
             <ul class="flex">
                 <li><a href="#inicio">INICIO</a></li>
                 <li ><a href="#proyectos">PROYECTOS</a></li>
-                <li href="#">FILOSOFIA</li>
+                <!-- <li href="#">FILOSOFIA</li> -->
                 <li ><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
@@ -27,9 +27,9 @@
         </div>
         <div class="inicio-txt" >
             <h6>Hola soy Pedro</h6>
-            <h1>ESTUDIANTE AUTODIDACTA</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ipsa consequatur magnam ipsum at soluta veniam in.</p>
-            <button href="#" class="ab">SOBRE MI</button>
+            <h1>ESTUDIANTE</h1>
+            <p>Espero que les guste mi portfolio!</p>
+            <button class="ab" id="bdark">MODO CLARO</button>
         </div>
     </section>
     <section class="proyectos" id="proyectos">
@@ -38,19 +38,18 @@
         <div class="proy-head">
             <div class="proy-txt" >
                 <H1>PROYECTOS</H1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Acá voy a estar subiendo mis trabajos</p>
             </div>
             <div>
-                <button class="proy-bt">VER TODDO</button>
+                <button class="proy-bt" id="bdark">VER TODDO</button>
             </div>
         </div>
         <div class="proy-body">
             <div class="proyectos-img">
-                <div class="fig-div"><div class="fig"><figure class="figure-class"><img class="imagenes" src="https://c8.alamy.com/compes/wfnamm/vista-real-del-hombre-con-el-perro-de-pie-en-la-playa-contra-el-cielo-wfnamm.jpg"></figure></div><figcaption class="descripcion"><h3>EPÍGRAFE</h2><h6 id="mas"><a id="mas">INFO</a></h6></figcaption></div>
-                <div class="fig-div"><div class="fig"><figure class="figure-class"><img class="imagenes" src="https://c8.alamy.com/compes/wfnamm/vista-real-del-hombre-con-el-perro-de-pie-en-la-playa-contra-el-cielo-wfnamm.jpg"></figure></div><figcaption class="descripcion"><h3>EPÍGRAFE</h2><h6 id="mas"><a>INFO</a></h6></figcaption></div>
-                <div class="fig-div"><div class="fig"><figure class="figure-class"><img class="imagenes" src="https://c8.alamy.com/compes/wfnamm/vista-real-del-hombre-con-el-perro-de-pie-en-la-playa-contra-el-cielo-wfnamm.jpg"></figure></div><figcaption class="descripcion"><h3>EPÍGRAFE</h2><h6 id="mas"><a>INFO</a></h6></figcaption></div>
-                <div class="fig-div"><div class="fig"><figure class="figure-class"><img class="imagenes" src="https://c8.alamy.com/compes/wfnamm/vista-real-del-hombre-con-el-perro-de-pie-en-la-playa-contra-el-cielo-wfnamm.jpg"></figure></div><figcaption class="descripcion"><h3>EPÍGRAFE</h2><h6 id="mas"><a>INFO</a></h6></figcaption></div>
-
+                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h3>PROXIMAMENTE</h2><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
+                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h3>PROXIMAMENTE</h2><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
+                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h3>PROXIMAMENTE</h2><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
+                <div class="fig-div"><div class="fig"><a href="./proximamente.html"><figure class="figure-class"><img class="imagenes" src="./img/proximamente.png"></figure></a></div><figcaption class="descripcion"><h3>PROXIMAMENTE</h2><h6 id="mas"><a id="mas" href="./proximamente.html">MÁS INFO</a></h6></figcaption></div>
             </div>
         </div>
     </section>
@@ -59,19 +58,49 @@
         <div class="contactos">
             <div>
                 <h1>CONTACTO</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Escribime un correo!</p>
             </div>
             <button id="cnt">CONTACTO</button>
         </div>
     </section>
     <footer>
-        <div class="zam1"><p>El diseño es una copia del modelo que se encuentra en <a href="https://www.behance.net/gallery/109660617/Portfolio-Web-design-_-Dark-version" target="_blank">este enlace</a><br>Quiero estudiar informatica no diseño</p></div>
+        <div class="zam1"><p>El diseño es una copia del modelo que se encuentra en <a href="https://www.behance.net/gallery/109660617/Portfolio-Web-design-_-Dark-version" target="_blank">este enlace</a><br>El diseño no es mi fuerte...</p></div>
         <div class="foo-imagenes">
-            <div class="foo-img"><a  href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTMXKRWCjmlnMGKHlpRvLhSlwlnLBMGvGCRCFPfbwjZBfNTkMWwHMzwVgklGHZRPNnNngV" target="_blank"><img class="cont" id="correo" src="./img/correo.png"></a></div>
+            <div class="foo-img"><a  href="https://mail.google.com/mail/?view=cm&fs=1&to=pedro918291@gmail.com" target="_blank"><img class="cont" id="correo" src="./img/correo.png"></a></div>
             <div class="foo-img"><a  href="https://github.com/NPC-001/Portfolio" target="_blank"><img class="cont" id="git" src="./img/git.png"></a></div>
             <div class="foo-img"><a  href="https://www.linkedin.com/in/pedro-romero-diaz-lhez-994b0b1aa/" target="_blank"><img id="linkedin" class="cont" src="./img/linkedin.png"></a></div>
         </div>
         <div id="zamil"><p>Diseño <a href="https://www.behance.net/gallery/109660617/Portfolio-Web-design-_-Dark-version" target="_blank">creado por zamil</a></p></div>
     </footer>
+    <script>
+        const bdark = document.querySelector('#bdark');
+        const body = document.querySelector('.claro');
+
+        load();
+
+        bdark.addEventListener('click', e =>{
+            body.classList.toggle('darkmode');
+            store();
+            if(bdark.textContent == "MODO CLARO"){
+                bdark.textContent = "MODO OSCURO";
+            }else{
+                bdark.textContent = "MODO CLARO";
+            }
+        })
+
+        function load(){
+            const darkmode = localStorage.getItem('darkmode');
+
+            if(!darkmode){
+                store('false');
+            }
+            else if(darkmode == 'true'){
+                body.classList.add('darkmode')
+            }
+        }
+        function store(value){
+            localStorage.setItem('darkmode', value)
+        }
+    </script>
 </body>
 </html>

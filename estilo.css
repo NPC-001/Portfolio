@@ -6,6 +6,10 @@
 --rojo-1: #FF4342;
 --rojo-2: #C31926;
 --blanco: #fff;
+--gris-1: #3B3936;
+--celeste-1: #D5E2F2;
+--celeste-2: #657A8C;
+--celeste-3: #364C59;
 }
 *{
     margin: 0;
@@ -158,6 +162,8 @@ button{
 }
 #mas{
     letter-spacing: 2px;
+    color: var(--rojo-1);
+    text-decoration: none;
 }
 #mas:hover{
     color: var(--blanco);
@@ -169,7 +175,7 @@ button{
     flex-direction: column;
 }
 .figure-class{
-    margin-top: 3.5%;
+    margin-top: 8%;
     align-items: center;
 }
 .fig{
@@ -178,6 +184,8 @@ button{
     margin-top: 10%;
     background: linear-gradient(to top right, var(--negro-2), var(--negro-3), var(--negro-2));
     align-self: center;
+    
+
 }
 .descripcion{
     padding-top: 2%;
@@ -275,6 +283,17 @@ pointer-events: none;
 }
 
     /*FOOTER FOOTER FOOTER FOOTER FOOTER FOO*/
+    /*PROXIMAMENTE PROXIMAMENTE PROXIMAMENTE*/
+.prox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to top right, var(--negro-2), var(--negro-3), var(--negro-2));
+}
+    /*PROXIMAMENTE PROXIMAMENTE PROXIMAMENTE*/
     /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA M*/
     @media(max-width: 600px){
         body{
@@ -288,7 +307,6 @@ pointer-events: none;
             height: 30vh;
         }
         .figure-class{
-            padding-top: 5%;
             width: 80%;
             margin: auto;
         }
@@ -296,7 +314,7 @@ pointer-events: none;
             height: 150vh;
         }
         .bg2{
-            height: 180vh;
+            height: 120vh;
         }
         #cnt{
             width: 12vw;
@@ -341,11 +359,68 @@ pointer-events: none;
             height: 115vh;
         }
         .foo-imagenes{
-            width: 50%;
+            width: 30%;
+            padding-top: 4%;
+        }
+        .figure-class{
+            padding-top: 10%;
+        }
+        #zamil{
+            margin-left: 5%;
+        }
+        .contactos{
+            margin: 0;
+            flex-wrap: wrap;
+        }
+    
+    }
+    @media(max-width: 1000px) and (min-width: 600px){
+        .descripcion{
+            position: relative;
+            top: -20%;
+        }
+        .foo-imagenes{
+            padding-top: 2%;
+            position:relative;
+            width: 60%;
         }
         #zamil{
             margin-left: 0;
         }
     }
     /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA M*/
+    /* MODO CLARO MODO CLARO MODO CLARO M */
+ .darkmode, .darkmode .proy-bg, .darkmode .bg2{
+    background: var(--celeste-2);
+
+}
+.darkmode h6, .darkmode p, .darkmode nav a, .darkmode #mas, .darkmode h1, .darkmode h3{
+    color: var(--negro-1);
+    font-weight: 1000;
+
+}
+.darkmode a:hover, .darkmode #mas:hover{
+    color: var(--gris-1);
+    font-weight: 1000;
+}
+
+.darkmode a{
+    color: var(--blanco)
+}
+ .darkmode nav, .darkmode footer, .darkmode button{
+    background: var(--celeste-3);
+
+}
+.darkmode .gris{
+    background-color: var(--celeste-1);
+}
+.darkmode .inicio{
+    background: linear-gradient(to left bottom, var(--celeste-3) 0%, var(--celeste-2) 30%, var(--celeste-2));
+
+}
+.darkmode .fig, .darkmode .contactos{
+    background: linear-gradient(to top right, var(--celeste-3), var(--celeste-2), var(--celeste-3));
+
+}
+    /* MODO CLARO MODO CLARO MODO CLARO M */
 

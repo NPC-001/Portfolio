@@ -1,0 +1,274 @@
+:root{
+    --naranja:#F20530;
+    --rosaO-1:#D90479;
+    --rosaF-2:#F2059F;
+    --celesteO-1:#0DC4D9;
+    --celesteC-2: #05F2DB;
+    --negro: #1B1D21;
+    --blanco: #F9F9FF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: linear-gradient(to bottom, #660273, #380140, #220126, var(--negro));
+    font-family: 'Quicksand', sans-serif;
+
+}
+#contenedor{
+    /* background-color: var(--negro); */
+    color: var(--blanco);
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 130px;
+
+}
+.principal{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    justify-self: center;
+    position: relative;
+    left: 65px;
+}
+.grid{
+    width: 200px;
+    height: 400px;
+    background-color: var(--negro);
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px var(--rosaF-2);
+    /* box-shadow: 0px 0px 10px var(--naranjaF-3); ME GUSTARIA QUE CAMBIE DE COLOR IGUAL QUE LA NEXTPIECE SHADOW */
+    border-radius: 5px;
+    overflow: hidden;
+    justify-self: center;
+}
+.grid div{
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 5px var(--rosaF-2);
+}
+/* .taken{ */
+    /* background-color: var(--naranja)!important; */
+    /* box-shadow:none!important; */
+/* } */
+.cubo{
+    border-radius: 2px;
+    background-color: var(--celesteC-2);
+    /* box-shadow: 0px 0px 10px var(--naranja); */
+}
+#oculto{
+    box-shadow: 0px 0px 10px var(--rosaF-2);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#nextPiece{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: var(--negro);
+
+}
+#nextPiece div{
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 5px var(--rosaF-2);
+}
+#score{
+    width: 100%;
+    position: relative;
+    top: -30px;
+    justify-self: left;
+}
+#scoreQuad{
+    color: var(--celesteC-2);
+    width: 25%;
+}
+#scoreNum{
+    width: 50%;
+    height: 10%;
+    position: relative;
+    top: -40px;
+    background: var(--negro);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--rosaO-1);
+    display: flex;
+    justify-content: right;
+    font-weight: 50px;
+    letter-spacing: 1px;
+}
+#controles{
+    width: 100%;
+    position: relative;
+    top: -35px;
+    
+    
+}
+#conDiv{
+    width: 25%;
+    justify-self: right;
+    height: 50vh;
+}
+.but{
+    background: none;
+    border: solid var(--celesteC-2) 2px;
+    color: var(--celesteC-2);
+    border-radius: 9px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 1000;
+    font-size: large;
+    margin-top: 15px;
+    width: 5rem;
+    height: 2rem;
+}
+a{
+    text-decoration: none;
+    color: var(--celesteC-2);
+}
+#next{
+    display: flex;
+    flex-direction: column;
+}
+.but:hover{
+    position: relative;
+    top: -1px;
+}
+#fondo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    background-image: url(./img/4354449.webp);
+    background-size:cover;
+}
+.background-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+#flecha{
+    width: 100%;
+
+}
+.flecha{
+    position: relative;
+    top: -10%;
+    width: 50%;
+    margin: auto;
+} 
+@media (max-width:400px){
+    .lilbt{
+        background: var(--celesteC-2);
+        border: solid var(--celesteC-2);
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        color: var(--rosaF-2);
+        font-size: small;
+        display: block;
+        margin: auto;
+    }
+    /* #gup{
+        
+    } */
+    #gle{
+        display: inline;
+        margin-left:20%;
+        
+    }
+    #gri{
+        display: inline;
+        margin-left:20%;
+    }
+    /* #gdw{
+
+    } */
+    #contenedor{
+        margin-top: 5px;
+    }
+    #scoreQuad{
+        width: 100%;
+        height: 11px;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        left: -1000px;
+        overflow: hidden;
+    }
+
+    .but{
+        width: 20%;
+        height: 40%;
+        font-size: 12px;
+    }
+    /* #score{
+        position: inherit;
+        width: 30%;
+    } */
+    #scoreNum{
+        height: 20px;
+        margin:0;
+        margin-left: 35%;
+    }
+    .principal{
+        width: 100%;
+        /* height: 200vh; */
+        position: inherit;
+        flex-wrap: wrap;
+    }
+    #next{
+        flex-direction: row;
+        width: 100%;
+
+    }
+    iframe{
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        top: -100px;
+        left: 1000px;
+
+    }
+    #conDiv{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        left: -1000px;
+
+    }
+    #conDiv2{
+        width: 100px;
+    }
+    #flecha2{
+        width: 100%;
+    }
+}
+@media (min-width:400px){
+    #conDiv2{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        left: -10000px;
+
+    }
+}

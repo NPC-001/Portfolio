@@ -155,7 +155,7 @@ a{
     background-image: url(./img/4354449.webp);
     background-size:cover;
 }
-.background-video {
+/* .background-video {
     position: absolute;
     left: 0;
     top: 0;
@@ -163,7 +163,7 @@ a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } */
 #flecha{
     width: 100%;
 

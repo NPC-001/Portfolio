@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const buttonLeft = document.querySelector("#gle")
     const buttonDown = document.querySelector("#gdw")
 
-
     // coordenadas de los cubos
     const cuboL = [
         [1, width +1, width*2 +1, 2],
@@ -76,7 +75,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }else{
             timerId = setInterval(goDown, 1000)
             startBtn.textContent = "stop"
-
         }
     }
     startBtn.addEventListener("click", start)
@@ -96,14 +94,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
             squares[currentPosition + element].classList.remove("cubo");
         });
     }
-    
+ 
     // timer y move down
     function goDown(){
         undraw(currentCubo)
         currentPosition += width;
         draw(currentCubo)
         freeze()
-    
     }
     
     // detener
@@ -121,7 +118,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             
         }
     }
-
     // controles
     function left(){
         undraw(currentCubo)
@@ -166,13 +162,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
             goDown()
         }
     }
-    
     document.addEventListener("keydown", control)
     buttonDown.addEventListener("click", goDown)
     buttonLeft.addEventListener("click", left)
     buttonRight.addEventListener("click", rigth)
     buttonUp.addEventListener("click", rotate)
-
     // score
     function addScore(){
         for(let i = 0; i<199; i+=width){
@@ -183,13 +177,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 row.forEach(item=>{
                     squares[item].classList.remove("taken")
                     squares[item].classList.remove("cubo")
-                    
-                    
                 })
                 let removed = squares.splice(i, width)
                 squares = removed.concat(squares)
                 squares.forEach(item=>grid.appendChild(item))
-                
             }
         }
     }
@@ -209,5 +200,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
 
         }
-
+    
 })
